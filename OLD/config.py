@@ -16,10 +16,10 @@ INITIAL_NESTS = [
 
 # Initial food resources
 INITIAL_RESOURCES = [
-    {"x": 150, "y": 100, "type": "food"},
-    {"x": 150, "y": 600, "type": "food"},
-    {"x": 850, "y": 100, "type": "food"},
-    {"x": 850, "y": 600, "type": "food"},
+    {"x": 150, "y": 100, "amount": 100, "type": "food"},
+    {"x": 150, "y": 600, "amount": 100, "type": "food"},
+    {"x": 850, "y": 100, "amount": 100, "type": "food"},
+    {"x": 850, "y": 600, "amount": 100, "type": "food"},
 ]
 
 # Initial obstacles
@@ -32,3 +32,12 @@ DETECTION_DISTANCE = 50
 
 # Obstacle collision radius
 OBSTACLE_RADIUS = 60
+
+# Pheromone parameters
+PHEROMONE_GRID_SIZE = 10  # Size of pheromone cell
+PHEROMONE_STRENGTH = 10.0  # Initial strength when ant deposits
+PHEROMONE_EVAPORATION = 0.95  # Evaporation rate per frame
+PHEROMONE_FOLLOW_THRESHOLD = 0.5  # Minimum strength to follow
+
+# Resource consumption
+RESOURCE_CONSUMPTION_PER_ANT = 1  # Amount consumed per ant per visit
